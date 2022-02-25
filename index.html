@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KomputerKu &mdash; Choose Your Beast</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="general.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img class="logo" alt="Omnifood logo" src="img/komputerku2.png" />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#meals">Processor</a></li>
+          <li><a class="main-nav-link" href="#cta">Pricing</a></li>
+          <li><a class="main-nav-link" href="#status">Payment Status</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+    <main>
+      <section class="section-hero" id="hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              Build your Personal Computer with low budget
+            </h1>
+            <p class="hero-description">
+              The smart feature for calculate your budget to Build the Personal
+              Computer. The cost will depend on your choice component.
+            </p>
+            <a href="#cta" class="btn btn--full margin-right-sm"
+              >Start Calculate</a
+            >
+            <!-- <a href="#how" class="btn btn--outline">Learn more &darr;</a> -->
+          </div>
+          <div class="hero-image-box">
+            <img src="img/PC2.webp" class="hero-img" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-meals" id="meals">
+        <div class="container grid grid--3-cols margin-bottom-md">
+          <div class="meal">
+            <img src="img/I3.jpg" class="meal-img" alt="Japanese Gyozas" />
+            <div class="meal-content">
+              <p class="meal-title">Intel Core i3</p>
+              <ul class="meal-attributes" id="i3">
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="timer"></ion-icon>
+                  <span
+                    >Base Clock Speed &colon; <strong> 3.7 GHz </strong></span
+                  >
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="cellular"></ion-icon>
+                  <span>Cache &colon; L3 – 3 MB Intel® Smart Cache </span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="filter"></ion-icon>
+                  <span>
+                    Frekuensi Dasar Grafik &colon;
+                    <strong>350 MHz</strong></span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="meal">
+            <img src="img/I5.jpg" class="meal-img" alt="Japanese Gyozas" />
+            <div class="meal-content">
+              <p class="meal-title">Intel Core i5</p>
+              <ul class="meal-attributes" id="i5">
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="timer"></ion-icon>
+                  <span
+                    >Base Clock Speed &colon; <strong> 4.1 GHz </strong></span
+                  >
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="cellular"></ion-icon>
+                  <span>Cache &colon; 6 MB Intel® Smart Cache </span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="filter"></ion-icon>
+                  <span>
+                    Frekuensi Dasar Grafik &colon;
+                    <strong> 300 MHz</strong></span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="meal">
+            <img src="img/I7.jpg" class="meal-img" alt="Japanese Gyozas" />
+            <div class="meal-content">
+              <p class="meal-title">Intel Core i7</p>
+              <ul class="meal-attributes" id="i7">
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="timer"></ion-icon>
+                  <span
+                    >Base Clock Speed &colon; <strong> 4.6 GHz </strong></span
+                  >
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="cellular"></ion-icon>
+                  <span>Cache &colon; 8 MB Intel® Smart Cache </span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="filter"></ion-icon>
+                  <span>
+                    Frekuensi Dasar Grafik &colon;
+                    <strong> 300 MHz</strong></span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-cta" id="status">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <input
+                type="text"
+                name="order"
+                id="order-code"
+                placeholder="Order Code"
+                class="order-code"
+              />
+              <button id="btn-status" class="btn btn--form">Check Order</button>
+              <button id="cancel-order" class="btn btn--form">
+                Cancel Order
+              </button>
+
+              <br />
+              <br />
+              <p class="cta-text" id="order-list"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-cta" id="cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">Get your first PC!</h2>
+              <p class="cta-text">
+                High techonology are waiting for you. Start building your own PC
+                today.
+              </p>
+
+              <form
+                class="cta-form"
+                name="sign-up"
+                netlify
+                onsubmit="submitForm(event)"
+                id="form1"
+              >
+                <div>
+                  <label for="select-where">RAM</label>
+                  <select id="ram" name="select-where" required>
+                    <option value="">Please Choose one option :</option>
+                    <option value="8gb">8 GB</option>
+                    <option value="16gb">16 GB</option>
+                    <option value="32gb">32 GB</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="select-where">Memory</label>
+                  <select id="memory" name="select-where" required>
+                    <option value="">Please Choose one option :</option>
+                    <option value="512gb">512 GB</option>
+                    <option value="1tb">1 TB</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="select-where">Processor</label>
+                  <select id="cpu" name="select-where" required>
+                    <option value="">Please Choose one option :</option>
+                    <option value="i3">i3</option>
+                    <option value="i5">i5</option>
+                    <option value="i7">i7</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="select-where">VGA</label>
+                  <select id="vga" name="select-where" required>
+                    <option value="">Please Choose one option :</option>
+                    <option value="rtx3050">RTX 3050</option>
+                    <option value="rtx3060">RTX 3060</option>
+                    <option value="rtx3070">RTX 3070</option>
+                    <option value="rtx3080">RTX 3080</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="select-where">Monitor</label>
+                  <select id="monitor" name="select-where" required>
+                    <option value="">Please Choose one option :</option>
+                    <option value="16in">16 in</option>
+                    <option value="19in">19 in</option>
+                    <option value="24in">24 in</option>
+                    <option value="32in">32 in</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="select-where">Keyboard + Mouse</label>
+                  <select id="keyboard" name="select-where" required>
+                    <option value="">Please Choose one option :</option>
+                    <option value="60%red">
+                      Keyboard 60% RGB Gateron Red + Mouse
+                    </option>
+                    <option value="60%brown">
+                      Keyboard 60% RGB Gateron Brown + Mouse
+                    </option>
+                    <option value="60%blue">
+                      Keyboard 60% RGB Gateron Blue + Mouse
+                    </option>
+                    <option value="65%red">
+                      Keyboard 65% RGB Gateron Red + Mouse
+                    </option>
+                    <option value="65%brown">
+                      Keyboard 65% RGB Gateron Brown + Mouse
+                    </option>
+                    <option value="65%blue">
+                      Keyboard 65% RGB Gateron Blue + Mouse
+                    </option>
+                    <option value="100%red">
+                      Keyboard 100% RGB Gateron Red + Mouse
+                    </option>
+                    <option value="100%brown">
+                      Keyboard 100% RGB Gateron Brown + Mouse
+                    </option>
+                    <option value="100%blue">
+                      Keyboard 100% RGB Gateron Blue + Mouse
+                    </option>
+                  </select>
+                </div>
+
+                <button
+                  class="btn btn--form"
+                  id="checkout"
+                  type="submit"
+                  form="form1"
+                >
+                  Checkout
+                </button>
+                <!-- <input id="sesuatu-input"></input> -->
+                <div class="modal-container" id="modal_container">
+                  <div class="modal">
+                    <h1>Payment Confirmation</h1>
+                    <h1 id="total"></h1>
+                    <br />
+                    <h1></h1>
+                    <h1>Order Code: <a id="code">K59UX</a></h1>
+                    <br />
+                    <div>
+                      <label for="name">Name</label>
+                      <input
+                        id="name"
+                        type="name"
+                        placeholder="John Doe"
+                        name="name"
+                      />
+                    </div>
+                    <br />
+                    <div>
+                      <label for="address">Address</label>
+                      <input
+                        id="address"
+                        type="address"
+                        placeholder="Simatupang Street"
+                        name="address"
+                      />
+                    </div>
+                    <br />
+                    <button id="confirm" class="btn btn--form">Confirm</button>
+                    <button id="cancel" class="btn btn--form">Cancel</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="setup komputer"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="section-cta" id="cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">Total Price</h2>
+              <p class="cta-text" id="total">Rp 0,-</p>
+            </div>
+          </div>
+        </div>
+      </section> -->
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
